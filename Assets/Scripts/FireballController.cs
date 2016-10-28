@@ -22,5 +22,9 @@ public class FireballController : MonoBehaviour {
 		rigidbodyComponent.velocity = new Vector2(speed,0);
 
 	}
-
+	// method called when the fireball goes out of the screen
+	void  OnBecameInvisible (){
+		// Destroy the bullet
+		Destroy(gameObject);
+	}
 }
