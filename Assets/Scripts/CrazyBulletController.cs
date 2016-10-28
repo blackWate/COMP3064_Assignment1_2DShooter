@@ -7,6 +7,9 @@ public class CrazyBulletController : MonoBehaviour {
 	[SerializeField]
 	private float speed;
 
+	//a fireball gameobject to connect to the crazy_bullet
+	public GameObject fireball;
+
 	private Transform _transform;
 	private Vector2 _currentPosition;
 
@@ -32,6 +35,13 @@ public class CrazyBulletController : MonoBehaviour {
 		//check bounds of screen
 		checkBounds ();
 		_transform.position = _currentPosition;
+
+		if (Input.GetKeyDown("space")) {
+			// Create a new fireball at “transform.position”
+			// Which is the current position of the crazy_bullet
+			//  add the fireball with no rotation
+			Instantiate(fireball, transform.position, Quaternion.identity);
+		}
 
 	}
 	//check the bounds for Crazy_bullet
