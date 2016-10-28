@@ -1,9 +1,17 @@
 fileFormatVersion: 2
 guid: 36cfd7be72b8246e1a110a647b510069
-timeCreated: 1477610835
+timeCreated: 1477621599
 licenseType: Free
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: blue_bird_0
+    21300002: blue_bird_1
+    21300004: blue_bird_2
+    21300006: blue_bird_3
+    21300008: blue_bird_4
+    21300010: blue_bird_5
+    21300012: blue_bird_6
+    21300014: blue_bird_7
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -30,7 +38,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     filterMode: -1
-    aniso: -1
+    aniso: 16
     mipBias: -1
     wrapMode: 1
   nPOTScale: 0
@@ -38,7 +46,7 @@ TextureImporter:
   rGBM: 0
   compressionQuality: 50
   allowsAlphaSplitting: 0
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -51,7 +59,111 @@ TextureImporter:
   buildTargetSettings: []
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: blue_bird_0
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 1301
+        width: 908
+        height: 619
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: blue_bird_1
+      rect:
+        serializedVersion: 2
+        x: 959
+        y: 1301
+        width: 907
+        height: 619
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: blue_bird_2
+      rect:
+        serializedVersion: 2
+        x: 1885
+        y: 1309
+        width: 918
+        height: 608
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: blue_bird_3
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 658
+        width: 908
+        height: 620
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: blue_bird_4
+      rect:
+        serializedVersion: 2
+        x: 959
+        y: 658
+        width: 907
+        height: 620
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: blue_bird_5
+      rect:
+        serializedVersion: 2
+        x: 1885
+        y: 665
+        width: 918
+        height: 610
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: blue_bird_6
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 23
+        width: 917
+        height: 608
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: blue_bird_7
+      rect:
+        serializedVersion: 2
+        x: 948
+        y: 23
+        width: 918
+        height: 608
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
     outline: []
   spritePackingTag: 
   userData: 

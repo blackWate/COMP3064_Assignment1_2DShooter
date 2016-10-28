@@ -1,9 +1,17 @@
 fileFormatVersion: 2
 guid: 75794983340604bc48e24fa0dbe01f89
-timeCreated: 1477610848
+timeCreated: 1477621666
 licenseType: Free
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: yellow_monster_bird_0
+    21300002: yellow_monster_bird_1
+    21300004: yellow_monster_bird_2
+    21300006: yellow_monster_bird_3
+    21300008: yellow_monster_bird_4
+    21300010: yellow_monster_bird_5
+    21300012: yellow_monster_bird_6
+    21300014: yellow_monster_bird_7
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -30,7 +38,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     filterMode: -1
-    aniso: -1
+    aniso: 16
     mipBias: -1
     wrapMode: 1
   nPOTScale: 0
@@ -38,7 +46,7 @@ TextureImporter:
   rGBM: 0
   compressionQuality: 50
   allowsAlphaSplitting: 0
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -51,7 +59,111 @@ TextureImporter:
   buildTargetSettings: []
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: yellow_monster_bird_0
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 1779
+        width: 1037
+        height: 795
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: yellow_monster_bird_1
+      rect:
+        serializedVersion: 2
+        x: 1072
+        y: 1779
+        width: 1037
+        height: 795
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: yellow_monster_bird_2
+      rect:
+        serializedVersion: 2
+        x: 2140
+        y: 1736
+        width: 1028
+        height: 837
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: yellow_monster_bird_3
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 874
+        width: 1037
+        height: 838
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: yellow_monster_bird_4
+      rect:
+        serializedVersion: 2
+        x: 1072
+        y: 917
+        width: 1037
+        height: 795
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: yellow_monster_bird_5
+      rect:
+        serializedVersion: 2
+        x: 2140
+        y: 930
+        width: 1028
+        height: 781
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: yellow_monster_bird_6
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 80
+        width: 1029
+        height: 769
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: yellow_monster_bird_7
+      rect:
+        serializedVersion: 2
+        x: 1080
+        y: 80
+        width: 1029
+        height: 769
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
     outline: []
   spritePackingTag: 
   userData: 
