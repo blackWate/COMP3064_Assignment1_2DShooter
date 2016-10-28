@@ -18,7 +18,7 @@ public class BackgroundController : MonoBehaviour {
 	SpriteRenderer render;
 
 
-	//tets
+	// Use this for initialization
 	void Start () {
 
 		_transform = gameObject.GetComponent<Transform> ();
