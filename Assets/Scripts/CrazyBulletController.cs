@@ -31,6 +31,14 @@ public class CrazyBulletController : MonoBehaviour {
 		if (Input.GetKey ("down"))
 			_currentPosition -= new Vector2 (0,speed);
 
+		//move left
+		if (Input.GetKey ("left"))
+			_currentPosition -= new Vector2 (speed,0);
+
+		//move right
+		if (Input.GetKey ("right"))
+			_currentPosition += new Vector2 (speed,0);
+
 
 		//check bounds of screen
 		checkBounds ();
