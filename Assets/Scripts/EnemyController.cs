@@ -13,7 +13,7 @@ public class EnemyController : MonoBehaviour {
 	//audioclip which plays when objects collieded
 	public AudioClip hitsound;
 
-	//source for audioclip            1
+	//source for audioclip
 	AudioSource audioEnemy;
 
 
@@ -43,7 +43,7 @@ public class EnemyController : MonoBehaviour {
 		if (name == "fireball(Clone)") {
 
 			// Destroy itself (the enemy) and the fireball but obstacles and coins
-			if (enemyName == "spike(Clone)" || enemyName == "spike_monster_A(Clone)" || enemyName == "spike_monster_B(Clone)") {
+			if (enemyName == "coin(Clone)" || enemyName == "spike(Clone)" || enemyName == "spike_monster_A(Clone)" || enemyName == "spike_monster_B(Clone)") {
 				//do nothing
 
 			} else //in case of collison with the birds
