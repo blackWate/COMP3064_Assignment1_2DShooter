@@ -16,6 +16,9 @@ public class EnemyController : MonoBehaviour {
 	//source for audioclip
 	AudioSource audioEnemy;
 
+	//Gameobjects for "live" objects on the scene
+	private GameObject[] lives;
+
 
 	// Use this for initialization
 	void Start () {
@@ -67,18 +70,59 @@ public class EnemyController : MonoBehaviour {
 			if (enemyName == "spike(Clone)"||enemyName == "spike_monster_A(Clone)"||enemyName == "spike_monster_B(Clone)") {
 				//play hit sound for spikes
 				audioEnemy.PlayOneShot (hitsound);
+				//go to method lifeCounter  to check the number of lives that carzy_bullet has
+				lifeCounter (obj.gameObject);
 
 
 			}
-			else{
-			//if crazy_bullet collides with birds
-			//play hit sound for birds
-			audioEnemy.PlayOneShot (hitsound);
-			//delay object destroy for a while to complete of the playing sound
-				Object.Destroy (gameObject,0.15f);}
+			else
+			{
+				//if carzy_bullet hits coin
+				if (enemyName == "coin(Clone)") {
+					//play related hit sound
+					audioEnemy.PlayOneShot (hitsound);
+
+					Object.Destroy (gameObject,0.2f);
+				}
+				else {
+					//if crazy_bullet collides with birds
+					//play hit sound for birds
+					audioEnemy.PlayOneShot (hitsound);
+					//delay object destroy for a while to complete of the playing sound
+					Object.Destroy (gameObject,0.15f);
+					//go to method lifeCounter  to check the number of lives that carzy_bullet has
+					lifeCounter (obj.gameObject);
+
+
+				}
+
+			}
 
 		}
 
 
 	}
+	// method called when the object goes out of the screen
+	void  OnBecameInvisible (){
+		// Destroy the enemy
+		Destroy(gameObject);
+	}
+	//count the number of lives, if it zero destroy the gameobject,reset the points, got to the Game end scene
+	private void lifeCounter(GameObject obj){
+		//check the scene to get the array of gameobjects with "life" tag name
+		lives=GameObject.FindGameObjectsWithTag("life");
+		//get the array length
+		var numLives = lives.Length;
+		//if the number of gameobjects is greater than zero destroy the last object in the array
+		if (numLives > 0) {
+			Destroy (lives[numLives-1]);
+		}
+		//if array length is one then destroy crazy_bullet
+		if (lives.Length == 1) {
+			Destroy (obj.gameObject);
+
+
+		}
+	}
+
 }
