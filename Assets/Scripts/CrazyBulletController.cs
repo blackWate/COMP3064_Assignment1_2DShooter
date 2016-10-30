@@ -55,19 +55,19 @@ public class CrazyBulletController : MonoBehaviour {
 	private void checkBounds(){
 		//get the height of the crazy_bullet
 		var renderer = gameObject.GetComponent<SpriteRenderer>();
-		float heigtCrazyBullet = renderer.bounds.size.y;
+		float heightCrazyBullet = renderer.bounds.size.y;
 
 
 
 		//if position is bigger than camera view-half of the height of CB(otherwise the half of CB will be out of screen)
 		//for the top boundry
-		if (_currentPosition.y > Camera.main.orthographicSize-heigtCrazyBullet/2.0f) {
-			_currentPosition.y = Camera.main.orthographicSize-heigtCrazyBullet/2.0f;
+		if (_currentPosition.y > Camera.main.orthographicSize-heightCrazyBullet/2.0f) {
+			_currentPosition.y = Camera.main.orthographicSize-heightCrazyBullet/2.0f;
 		}
 
 		//for the bottom boundry (grass height added -->1.4f)
-		if (_currentPosition.y < -Camera.main.orthographicSize+heigtCrazyBullet/2.0f+1.4f) {
-			_currentPosition.y = -Camera.main.orthographicSize+heigtCrazyBullet/2.0f+1.4f;
+		if (_currentPosition.y < -Camera.main.orthographicSize+heightCrazyBullet/2.0f+1.4f) {
+			_currentPosition.y = -Camera.main.orthographicSize+heightCrazyBullet/2.0f+1.4f;
 		}
 
 		//for the right  boundry
