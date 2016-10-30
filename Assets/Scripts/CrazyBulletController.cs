@@ -62,6 +62,15 @@ public class CrazyBulletController : MonoBehaviour {
 			_currentPosition.y = -Camera.main.orthographicSize+heigtCrazyBullet/2;
 		}
 
+		//for the right  boundry
+		if (_currentPosition.x > Camera.main.orthographicSize*2-widthCrazyBullet/2) {
+			_currentPosition.x = Camera.main.orthographicSize*2-widthCrazyBullet/2;
+		}
+
+		//for the left boundry
+		if (_currentPosition.x < -Camera.main.orthographicSize*2+widthCrazyBullet/2) {
+			_currentPosition.x = -Camera.main.orthographicSize*2+widthCrazyBullet/2;
+		}
 
 	}
 }
