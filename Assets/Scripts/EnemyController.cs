@@ -130,6 +130,9 @@ public class EnemyController : MonoBehaviour {
 			//reset points to zero
 			Player.Instance.Points = 0;
 
+			//goto Game_end scene
+			SceneController scene=new SceneController();
+			scene.loadScene ("Game_End");
 
 		}
 	}
