@@ -47,7 +47,6 @@ public class CrazyBulletController : MonoBehaviour {
 		if (Input.GetKeyDown("space")) {
 			// Create a new fireball at “transform.position”
 			// Which is the current position of the crazy_bullet
-			//  add the fireball with no rotation
 			Instantiate(fireball, transform.position, Quaternion.identity);
 		}
 
