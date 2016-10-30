@@ -19,6 +19,10 @@ public class EnemyController : MonoBehaviour {
 	//Gameobjects for "live" objects on the scene
 	private GameObject[] lives;
 
+	//points for connected enemies,obstacles or coin,
+	[SerializeField]
+	private int  point;
+
 
 	// Use this for initialization
 	void Start () {
@@ -55,10 +59,12 @@ public class EnemyController : MonoBehaviour {
 				//play hit sound which is connected to the bird
 				audioEnemy.PlayOneShot (hitsound);
 				//delay object destroy for a while to complete of the playing sound
-				//Destroy fireball done
+				//Destroy fireball
 				Object.Destroy (obj.gameObject,0.15f);
-				//destroy enemy(birds) done
+				//destroy enemy(birds)
 				Object.Destroy (gameObject,0.15f);
+				//add points which is given to the bird
+				Player.Instance.Points+=point;
 
 			}
 
@@ -81,8 +87,9 @@ public class EnemyController : MonoBehaviour {
 				if (enemyName == "coin(Clone)") {
 					//play related hit sound
 					audioEnemy.PlayOneShot (hitsound);
-
 					Object.Destroy (gameObject,0.2f);
+					//add the points given to the coins
+					Player.Instance.Points+=point;
 				}
 				else {
 					//if crazy_bullet collides with birds
@@ -120,6 +127,8 @@ public class EnemyController : MonoBehaviour {
 		//if array length is one then destroy crazy_bullet
 		if (lives.Length == 1) {
 			Destroy (obj.gameObject);
+			//reset points to zero
+			Player.Instance.Points = 0;
 
 
 		}
