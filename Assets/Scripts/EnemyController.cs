@@ -7,7 +7,7 @@ public class EnemyController : MonoBehaviour {
 	[SerializeField]
 	private float speed;
 
-	//create rigid body component for enemies  done
+	//create rigid body component for enemies
 	private Rigidbody2D rigidbodyComponent;
 
 	//audioclip which plays when objects collieded
@@ -19,7 +19,7 @@ public class EnemyController : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		// Get the rigidbody component  done
+		// Get the rigidbody component
 		if (rigidbodyComponent == null) rigidbodyComponent = GetComponent<Rigidbody2D>();
 
 		// Add a horizantol speed to the enemy
@@ -42,13 +42,22 @@ public class EnemyController : MonoBehaviour {
 		// If the enemy collided with the fireball
 		if (name == "fireball(Clone)") {
 
-			//play hit sound which is connected to the bird  1
-			audioEnemy.PlayOneShot (hitsound);
-			//delay object destroy for a while to complete of the playing sound 1
-			//Destroy fireball done
-			Object.Destroy (obj.gameObject,0.15f);
-			//destroy enemy(birds) done
-			Object.Destroy (gameObject,0.15f);
+			// Destroy itself (the enemy) and the fireball but obstacles and coins
+			if (enemyName == "spike(Clone)" || enemyName == "spike_monster_A(Clone)" || enemyName == "spike_monster_B(Clone)") {
+				//do nothing
+
+			} else //in case of collison with the birds
+			{
+
+				//play hit sound which is connected to the bird
+				audioEnemy.PlayOneShot (hitsound);
+				//delay object destroy for a while to complete of the playing sound
+				//Destroy fireball done
+				Object.Destroy (obj.gameObject,0.15f);
+				//destroy enemy(birds) done
+				Object.Destroy (gameObject,0.15f);
+
+			}
 
 			}
 
