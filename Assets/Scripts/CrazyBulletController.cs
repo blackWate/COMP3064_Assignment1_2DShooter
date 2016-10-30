@@ -54,30 +54,31 @@ public class CrazyBulletController : MonoBehaviour {
 	}
 	//check the bounds for Crazy_bullet
 	private void checkBounds(){
-		//get the height and width of the crazy_bullet
-		var renderer = gameObject.GetComponent<Renderer>();
+		//get the height of the crazy_bullet
+		var renderer = gameObject.GetComponent<SpriteRenderer>();
 		float heigtCrazyBullet = renderer.bounds.size.y;
-		float widthCrazyBullet = renderer.bounds.size.x;
+
+
 
 		//if position is bigger than camera view-half of the height of CB(otherwise the half of CB will be out of screen)
 		//for the top boundry
-		if (_currentPosition.y > Camera.main.orthographicSize-heigtCrazyBullet/2) {
-			_currentPosition.y = Camera.main.orthographicSize-heigtCrazyBullet/2;
+		if (_currentPosition.y > Camera.main.orthographicSize-heigtCrazyBullet/2.0f) {
+			_currentPosition.y = Camera.main.orthographicSize-heigtCrazyBullet/2.0f;
 		}
 
-		//for the bottom boundry
-		if (_currentPosition.y < -Camera.main.orthographicSize+heigtCrazyBullet/2) {
-			_currentPosition.y = -Camera.main.orthographicSize+heigtCrazyBullet/2;
+		//for the bottom boundry (grass height added -->1.4f)
+		if (_currentPosition.y < -Camera.main.orthographicSize+heigtCrazyBullet/2.0f+1.4f) {
+			_currentPosition.y = -Camera.main.orthographicSize+heigtCrazyBullet/2.0f+1.4f;
 		}
 
 		//for the right  boundry
-		if (_currentPosition.x > Camera.main.orthographicSize*2-widthCrazyBullet/2) {
-			_currentPosition.x = Camera.main.orthographicSize*2-widthCrazyBullet/2;
+		if (_currentPosition.x > Camera.main.orthographicSize*2.0f-heigtCrazyBullet/2.0f) {
+			_currentPosition.x = Camera.main.orthographicSize*2.0f-heigtCrazyBullet/2.0f;
 		}
 
 		//for the left boundry
-		if (_currentPosition.x < -Camera.main.orthographicSize*2+widthCrazyBullet/2) {
-			_currentPosition.x = -Camera.main.orthographicSize*2+widthCrazyBullet/2;
+		if (_currentPosition.x < -Camera.main.orthographicSize*2.0f+heigtCrazyBullet/2.0f) {
+			_currentPosition.x = -Camera.main.orthographicSize*2.0f+heigtCrazyBullet/2.0f;
 		}
 
 	}
