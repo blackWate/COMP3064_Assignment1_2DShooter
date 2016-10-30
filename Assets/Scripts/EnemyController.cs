@@ -63,12 +63,19 @@ public class EnemyController : MonoBehaviour {
 
 		// If the enemy,obstcale or coin collided with the carzy_bullet
 		if (name == "crazy_bullet") {
+			// If the crazy_bullet collided with the obstacles
+			if (enemyName == "spike(Clone)"||enemyName == "spike_monster_A(Clone)"||enemyName == "spike_monster_B(Clone)") {
+				//play hit sound for spikes
+				audioEnemy.PlayOneShot (hitsound);
 
+
+			}
+			else{
 			//if crazy_bullet collides with birds
 			//play hit sound for birds
 			audioEnemy.PlayOneShot (hitsound);
 			//delay object destroy for a while to complete of the playing sound
-			Object.Destroy (gameObject,0.15f);
+				Object.Destroy (gameObject,0.15f);}
 
 		}
 
