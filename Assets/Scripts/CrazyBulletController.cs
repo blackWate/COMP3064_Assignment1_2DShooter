@@ -1,3 +1,12 @@
+//*Source            :CrazyBulletController.cs
+//*Author            :Umit M.Karasu - 100938361
+//*Last Modified by  :Umit M.Karasu
+//*Date last Modified:Oct 30, 2016
+//*Description       :CrazyBulletController controls the main chacarter of the game, which is crazy_bullet, it moves
+//* character up and down, left and right, it keeps the character in the bounds of the screen, it gets the speed variable
+//*to move to the desired direction,and fireball gameobject to shoot the enemies
+//*Revision History  :https://github.com/blackWate/COMP3064_Assignment1_2DShooter/commits/master/Assets/Scripts/CrazyBulletController.cs
+
 using UnityEngine;
 using System.Collections;
 

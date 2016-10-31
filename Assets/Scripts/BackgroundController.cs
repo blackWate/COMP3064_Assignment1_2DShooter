@@ -1,3 +1,10 @@
+//*Source            :BackgroundController.cs
+//*Author            :Umit M.Karasu - 100938361
+//*Last Modified by  :Umit M.Karasu
+//*Date last Modified:Oct 27, 2016
+//*Description       : Scrolls background gameobjects seamlessly without jump
+//*Revision History  :https://github.com/blackWate/COMP3064_Assignment1_2DShooter/commits/master/Assets/Scripts/BackgroundController.cs
+
 using UnityEngine;
 using System.Collections;
 

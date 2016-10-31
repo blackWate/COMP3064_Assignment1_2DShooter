@@ -1,3 +1,13 @@
+//*Source            :Player.cs
+//*Author            :Umit M.Karasu - 100938361
+//*Last Modified by  :Umit M.Karasu
+//*Date last Modified:Oct 30, 2016
+//*Description       : Player class have integer point variable and pointcontroller variable which is connected
+//* to the  text gameobject, any update of the instance of player points will be seen on the scene
+//*Revision History  :https://github.com/blackWate/COMP3064_Assignment1_2DShooter/commits/master/Assets/Scripts/Player.cs
+
+
+
 using UnityEngine;
 using System.Collections;
 

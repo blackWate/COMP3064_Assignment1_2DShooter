@@ -1,3 +1,11 @@
+//*Source            :EnemyController.cs
+//*Author            :Umit M.Karasu - 100938361
+//*Last Modified by  :Umit M.Karasu
+//*Date last Modified:Oct 30, 2016
+//*Description       :EnemyController plays collision sounds, destroy objects which are gotten hit, or hit,add points or
+//*reduce the lives of the character, destroy the character if the number of it's lives is zero, and navigate to end of game scene
+//*Revision History  :https://github.com/blackWate/COMP3064_Assignment1_2DShooter/commits/master/Assets/Scripts/EnemyController.cs
+
 using UnityEngine;
 using System.Collections;
 
@@ -45,10 +53,7 @@ public class EnemyController : MonoBehaviour {
 		string name= obj.gameObject.name;
 		//get the name/s of enemies,obstacles or coin
 		string enemyName = gameObject.name;
-//		if(name=="crystal_bullet(Clone)")
-//		{
-//		print ("name :"+name);
-//			print ("enemy name :"+enemyName);}
+
 		//get audio source component of the connected objects(enemy,obstacle or coin)
 		audioEnemy = gameObject.GetComponent<AudioSource> ();
 
@@ -78,8 +83,7 @@ public class EnemyController : MonoBehaviour {
 
 		// If the enemy,obstcale or coin collided with the carzy_bullet
 		if (name == "crazy_bullet") {
-			print ("name :"+name);
-			print ("enemy name :"+enemyName);
+
 			// If the crazy_bullet collided with the obstacles
 			if (enemyName == "spike(Clone)"||enemyName == "spike_monster_A(Clone)"||enemyName == "spike_monster_B(Clone)") {
 				//play hit sound for spikes

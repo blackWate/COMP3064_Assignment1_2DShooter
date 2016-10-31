@@ -1,3 +1,12 @@
+//*Source            :FireballController.cs
+//*Author            :Umit M.Karasu - 100938361
+//*Last Modified by  :Umit M.Karasu
+//*Date last Modified:10/30/2016
+//*Description       : fireball will be used for shooting the enemies
+//* the fireballs which missed the target will be destroyed when they go out of teh screen.
+//*Revision History  :https://github.com/blackWate/COMP3064_Assignment1_2DShooter/commits/master/Assets/Scripts/FireballController.cs
+
+
 using UnityEngine;
 using System.Collections;
 
@@ -27,4 +36,5 @@ public class FireballController : MonoBehaviour {
 		// Destroy the bullet
 		Destroy(gameObject);
 	}
+
 }

@@ -1,3 +1,11 @@
+//*Source            :SceneController.cs
+//*Author            :Umit M.Karasu - 100938361
+//*Last Modified by  :Umit M.Karasu
+//*Date last Modified:Oct 30, 2016
+//*Description       :Scene Manager, it manages the scene navigation and , app quit
+//*Revision History  :https://github.com/blackWate/COMP3064_Assignment1_2DShooter/commits/master/Assets/Scripts/SceneController.cs
+
+
 using UnityEngine;
 using System.Collections;
 using UnityEngine.SceneManagement;
