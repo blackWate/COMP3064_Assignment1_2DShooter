@@ -33,19 +33,19 @@ public class CrazyBulletController : MonoBehaviour {
 		_currentPosition = _transform.position;
 
 		//move up
-		if (Input.GetKey ("up"))
+		if (Input.GetKey ("w"))
 			_currentPosition += new Vector2 (0,speed);
 
 		//move down
-		if (Input.GetKey ("down"))
+		if (Input.GetKey ("s"))
 			_currentPosition -= new Vector2 (0,speed);
 
 		//move left
-		if (Input.GetKey ("left"))
+		if (Input.GetKey ("a"))
 			_currentPosition -= new Vector2 (speed,0);
 
 		//move right
-		if (Input.GetKey ("right"))
+		if (Input.GetKey ("d"))
 			_currentPosition += new Vector2 (speed,0);
 
 
